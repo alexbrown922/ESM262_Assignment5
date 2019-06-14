@@ -17,6 +17,8 @@ rainfall_mean = function(rainfall_data, location = "Albury", plot_out = FALSE){
     summarise(rainfall_mean = mean(Rainfall, na.rm = TRUE)) %>% 
     ungroup
   
+#.rda
+  
   if(plot_out){
     plot <- ggplot(rain_df, aes(x = as.factor(year), y = rainfall_mean)) + geom_col() + labs(title = sprintf("Annual Average Rainfall Percentage", location), x = "Year", y = "Average Rainfall") + theme_classic() +
       #      scale_x_continuous(expand = c(0,0)) +

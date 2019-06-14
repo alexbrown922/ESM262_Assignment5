@@ -12,3 +12,5 @@ library(tidyverse)
                     
                     expect_that(water_supply(rain_df)$table$annual_rainfall, equals(c(1,1,1,1)))
                     })
+
+          #.rda

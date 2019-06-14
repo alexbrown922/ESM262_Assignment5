@@ -17,3 +17,5 @@ temperature_AC <- function(data){
   
   return(list(table = AC_data))
 }
+
+#.rda

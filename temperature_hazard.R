@@ -27,3 +27,5 @@ temp_hazard = function(data){
   
   
 }
+
+#.rda

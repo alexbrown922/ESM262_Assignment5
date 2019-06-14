@@ -29,3 +29,5 @@ rainfall_maximum = function(rainfall_data, location = "Albury", year = 2009:2017
   )
   
 }
+
+#.rda

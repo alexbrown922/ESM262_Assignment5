@@ -13,3 +13,5 @@ test_that("temp_hazard_works" ,
           
           expect_that(temp_hazard(rainfall_data)$table$extreme_heat_n, equals(4))
           })
+
+#.rda

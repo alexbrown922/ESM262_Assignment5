@@ -50,3 +50,4 @@ test_temperature_AC
 test_water_supply <- water_supply(rain_AUS, location = "Albury", plot_out = TRUE)
 test_water_supply
 ```
+rda files not working idk

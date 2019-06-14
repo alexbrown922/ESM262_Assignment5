@@ -13,3 +13,5 @@ test_that("rainfall_mean_works" ,
           
           expect_that(rainfall_mean(rainfall_data, plot_out=TRUE)$rain_table$rainfall_mean, equals(c(1,1,1,1)))
           })
+
+#.rda
