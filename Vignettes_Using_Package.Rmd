@@ -1,0 +1,52 @@
+---
+title: "Vignettes_Package"
+author: "Alex Brown"
+date: "6/12/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignettes_package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup}
+knitr::opts_chunk$set(fig.width = 6, fig.height = 4, fig.path = 'figs/',
+  collapse = TRUE
+
+)
+library(tidyverse)
+load("~/Documents/Bren/Spring 2019/ESM 262/Github Assignment 5/ESM262_Assignment5/Rainfall_Australia.RData")
+```
+
+
+```{r example}
+ 
+data(rain_AUS)
+ 
+#Find the max rainfall for each location and year/month. Output the location, year, month, and rainfall
+test_rainfall_maximum <- rainfall_maximum(rain_AUS)
+test_rainfall_maximum
+# rainfall_mean
+# Find the daily mean rainfall for every year and location. Output location, year, and rainfall
+test_rainfall_mean <- rainfall_mean(rain_AUS, location = "Albury", plot_out = TRUE)
+test_rainfall_mean
+# temperature_hazard
+# Find the number of days at each location where there is risk of health effects from freezing weather and extreme heat at 9am
+test_temp_hazard <- temp_hazard(rain_AUS)
+test_temp_hazard
+# temperature_AC
+# Find the potential cost of extreme heat to people's air conditioning bill. #numbers way too large
+test_temperature_AC <- temperature_AC(rain_AUS)
+test_temperature_AC
+#water_supply
+#Finds an output for water supply quality based on location and year
+test_water_supply <- water_supply(rain_AUS, location = "Albury", plot_out = TRUE)
+test_water_supply
+```
